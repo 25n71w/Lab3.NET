@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+<table>
+    <tr>
+        <td>
+            Number of Bottles:
+        </td>
+        <td>
+            @ViewData["numOfBottles"]
+            @{
+                var numB = ViewData["numOfBottles"].ToString();
+                int num;
+                int check = 0;
+                bool pars = Int32.TryParse(numB, out num);
+                if (num < 50 || num > 100)
+                {
+                <td>
+                    Invalid Input ! 
+                </td>
+                    check = 1;
+                }
+                if (check == 0)
+                {
+                    for (int i = num; i > 0; i--)
+                    {
+
+                <p>@i green bottles hanging on the wall</p>
+                <p>@i green bottles hanging on the wall</p>
+                <p>And if one green bottle should accidentally fall</p>
+                <p>There'll be  @(i - 1) green bottles hanging on the wall</p>
+                        }
+                    }
+                }
+
+
+          </td>
+
+        </tr>
+    
+</table>
+<form asp-controller="Home" asp-action="Razor" method="post">
+    
+    <input type="submit" value="Play Again ?" />
+</form>
+<br />
+<br />
+<br />

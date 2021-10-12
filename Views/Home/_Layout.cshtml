@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<header class="page-header">
+    <h1>Hamza Eliraqy</h1>
+    <h1>Welcomes you</h1>
+</header>
+@Html.ActionLink("Index", "Index", null, new { @class = "page-scroll" })
+@Html.ActionLink("BottleGame", "Razor", null, new { @class = "page-scroll" })
+@Html.ActionLink("Person", "CreatePerson", null, new { @class = "page-scroll" })
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+<footer class="page-footer">
+    <h1>I added the css file into the home folder, and used basic design</h1>
+    <h1>A Layout is a pre-set design for how information should be shown for the user</h1>
+    <h1>Easier for the program to find</h1>
+</footer>

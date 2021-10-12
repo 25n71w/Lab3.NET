@@ -1,0 +1,67 @@
+﻿@model Lab3.models.Person
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create Person";
+}
+<h3>New Person</h3>
+<table>
+    <tr>
+        <td>
+            First Name:
+        </td>
+        <td>
+            @Model.FirstName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            @Model.LastName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Age:
+        </td>
+        <td>
+            @Model.Age
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email Address:
+        </td>
+        <td>
+            @Model.EmailAddress
+        </td>
+    </tr>
+    <tr>
+        <td>
+            DOB (TODO):
+        </td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password:
+        </td>
+        <td>
+            @Model.Password
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Description of Person:
+        </td>
+        <td>
+            @Model.PersDescription
+        </td>
+    </tr>
+</table>
+<br />
+<br />
+<br />
